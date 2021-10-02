@@ -84,7 +84,7 @@ jobs:
   push_to_ProdEnv:   
     name: Publish to Azure Docker Live Env "Stakeholders Review & Project Sponsor Confirmation is required to proceed"
     runs-on: ubuntu-latest
-    needs: login_to_Dockerhub
+    needs: push_to_devEnv
     environment: Production
     steps:  
       - name: Check out the repo
